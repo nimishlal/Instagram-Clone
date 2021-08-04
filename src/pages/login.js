@@ -8,7 +8,7 @@ export default function Login() {
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const isValid = password === '' || emailAddress === '';
+    const isInvalid = password === '' || emailAddress === '';
     const handleLgoin = () => { };
 
     useEffect(
@@ -41,6 +41,11 @@ export default function Login() {
                         onChange= { ({target }) => setPassword(target.value)}
                         > 
                     </input>
+                    <button 
+                        disabled ={isInvalid}
+                        type="submit"
+                        className = {`bg-blue-500 text-white w-full rounded h-8 font-bold${isInvalid && 'opacity-50'}`}
+                    >Login</button>
                 </form>
             </div>
         </div>
@@ -49,3 +54,4 @@ export default function Login() {
 
 // tailwind config items
 // text-red-primary
+//text-gray-base
