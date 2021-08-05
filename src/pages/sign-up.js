@@ -29,7 +29,7 @@ export default function SignUp() {
             username: username.toLowerCase(),
             fullName,
             emailAddress: emailAddress.toLowerCase(),
-            following: [],
+            following: ['2'],
             dateCreated: Date.now()
           });
           history.push(ROUTES.DASHBOARD);
@@ -40,6 +40,7 @@ export default function SignUp() {
           setError(error.message);
         }
       } else {
+        setUsername('');
         setError('That username already exists');
       }
     };
