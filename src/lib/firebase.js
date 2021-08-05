@@ -5,12 +5,13 @@ import 'firebase/auth';
 
 // We will need to connect our seed data here
 const config = {
-    apiKey: "AIzaSyDS_iVqbs4mf93tG-e5H4cuXEiqqWJITZc",
-    authDomain: "instagram-csa.firebaseapp.com",
-    projectId: "instagram-csa",
-    storageBucket: "instagram-csa.appspot.com",
-    messagingSenderId: "821452725028",
-    appId: "1:821452725028:web:e690251a3d3d4a0745f1b1"
+  apiKey: "AIzaSyAc0cgNUEFfKcnwq9c0hgYemcTaNUz5Yrc",
+  authDomain: "instagram-clone-c16f2.firebaseapp.com",
+  projectId: "instagram-clone-c16f2",
+  storageBucket: "instagram-clone-c16f2.appspot.com",
+  messagingSenderId: "24861351959",
+  appId: "1:24861351959:web:3862293bbb00ed8957bc52",
+  measurementId: "G-BGSLZSXCYS"
   };
 
 const firebase = Firebase.initializeApp(config);

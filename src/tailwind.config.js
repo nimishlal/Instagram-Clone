@@ -24,5 +24,5 @@ module.exports = {
                 primary:"#ed4956"
             }
         }
-    }
+    },
 };
